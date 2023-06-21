@@ -1,0 +1,19 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+
+.btn {
+
+    @include mixins.shadow;
+    @include mixins.button;
+
+    text-decoration: none;
+    display: block;
+    margin-bottom: variables.$spacer;
+    
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: darken(variables.$color-primary, 10%);
+}

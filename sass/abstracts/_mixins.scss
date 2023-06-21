@@ -1,1 +1,24 @@
-@use "abstracts/variables";
+@use 'variables';
+
+@mixin shadow {
+    box-shadow: 3px 3px 8px rgb(128, 126, 126);
+}
+
+@mixin gradient {
+    background-color: variables.$color-primary;
+    background-image: linear-gradient(360deg, variables.$color-primary 30%, variables.$color-secondary 100%);
+}
+
+@mixin button {
+    font-weight: 700;
+    background-color: variables.$color-primary;
+    color: white;
+    padding: variables.$spacer variables.$double-spacer;
+    border-radius: variables.$half-spacer;
+    text-align: center;
+}
+
+@mixin m-bottom {
+    margin-bottom: variables.$spacer;
+}
+

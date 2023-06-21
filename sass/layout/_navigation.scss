@@ -1,0 +1,29 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+
+.menu {
+    display: flex;
+    gap: variables.$spacer;
+    justify-content: center;
+
+    @include mixins.m-bottom;
+
+    @media screen and (min-width: 680px) {
+        justify-content: end;
+    }
+
+    
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 700;
+        color: black;
+    }
+
+
+}

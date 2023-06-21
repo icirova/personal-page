@@ -1,7 +1,7 @@
 {
   "name": "personal-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "personal page",
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy",

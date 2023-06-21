@@ -1,0 +1,10 @@
+@use '../abstracts/variables';
+
+html {
+    font-family: variables.$default-font;
+    
+}
+
+h1 > h6 {
+    font-family: variables.$title-font;
+}
