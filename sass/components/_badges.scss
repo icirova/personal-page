@@ -13,19 +13,28 @@
     font-size: 0.8em;
     font-weight: 700;
     width: 140px;
-    margin: auto;
+    margin: variables.$spacer auto;
+    
 }
 
 
 
 .badge--header {
     
-
     @media screen and (min-width: 680px) {
         margin: 0;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        justify-self: start;
     }
 } 
 
-.badge--about {
-    margin: variables.$spacer auto;
+.badge--card {
+    width: 200px;
+
+    @media screen and (min-width: 680px) {
+        // margin: variables.$spacer 0;
+    }
+
 }
+

@@ -11,7 +11,7 @@
     @media screen and (min-width: 680px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
         justify-items: start;
         align-items: center;
         border-radius: variables.$half-spacer;
@@ -32,7 +32,7 @@
 
         @media screen and (min-width: 680px) {
             grid-column: 1 / 2;
-            grid-row: 2 / 3;
+            grid-row: 3 / 4;
             text-align: start;
           
         }
@@ -50,18 +50,20 @@
         @media screen and (min-width: 680px) {
             margin: 0;
             grid-column: 2 / -1;
-            grid-row: 1 / 4;
+            grid-row: 1 / 5;
             justify-self: end;
         }
     }
 }
 
+
 .about {
     padding: variables.$spacer;
+    margin: variables.$triple-spacer;
 }
 
 .icons {
-    margin: variables.$spacer;
+   
     text-align: center;
 }
 

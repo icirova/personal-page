@@ -6,8 +6,8 @@
     display: flex;
     gap: variables.$spacer;
     justify-content: center;
-
-    @include mixins.m-bottom;
+    margin: variables.$spacer auto;
+   
 
     @media screen and (min-width: 680px) {
         justify-content: end;

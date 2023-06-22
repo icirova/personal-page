@@ -1,1 +1,13 @@
 @use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.footer {
+    background-color: variables.$color-supplementary;
+    padding: variables.$spacer;
+
+    &__description {
+        text-align: center;
+        margin: variables.$spacer;
+    }
+}
+

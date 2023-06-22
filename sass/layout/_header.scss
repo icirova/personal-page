@@ -4,7 +4,7 @@
 
 .header {
 
-        @include mixins.m-bottom;
+       
 
         @media screen and (min-width: 680px) {
             margin: variables.$spacer 0;

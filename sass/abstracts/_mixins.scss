@@ -1,5 +1,8 @@
 @use 'variables';
 
+@mixin shadow {
+    box-shadow: 3px 3px 8px rgb(156, 152, 152);
+}
 
 @mixin gradient {
     background-color: variables.$color-primary;

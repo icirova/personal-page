@@ -1,0 +1,21 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.resume {
+    &__subtitle {
+        color: variables.$color-primary;
+        margin: variables.$spacer 0;
+        
+
+        @media screen and (min-width: 680px) {
+            font-size: 2em;
+        }
+    }
+}
+
+.skills {
+    @media screen and (min-width: 680px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
