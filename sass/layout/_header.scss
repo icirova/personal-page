@@ -4,34 +4,23 @@
 
 .header {
 
-    margin: 0 auto;
-  
-    &__title {
-        color:variables.$color-secondary;
-        text-align: center
-    }
+        @include mixins.m-bottom;
 
-    &__description {
-        @include mixins.gradient;
-
- 
-        text-align: center;
-        border-radius: variables.$half-spacer;
-        padding: variables.$mini-spacer variables.$half-spacer;
-        color:white;
-        text-transform: uppercase;
+        @media screen and (min-width: 680px) {
+            margin: variables.$spacer 0;
+        }
 
 
-    }
-
-    &__image {
-        @include mixins.shadow;
-        @include mixins.gradient;
     
-        display: block;
-        margin: 0 auto;
-        border-radius: variables.$spacer;
-        max-width: 100%;
-    }
-
 }
+
+.header-wrapper {
+
+    @media screen and (min-width: 680px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    }
+}
+

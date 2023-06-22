@@ -1,9 +1,47 @@
 @use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; margin: 0; padding: 0; }
 
 .wrapper {
-    max-width: 1200px;
-    margin: 0px auto;
+
+    
+
+    @media screen and (min-width: 680px) {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    
 }
+
+.title {
+    color:variables.$color-secondary;
+    text-align: center;
+    margin: variables.$spacer;
+    font-size: 2.5em;
+
+}
+
+.title--hero {
+
+    text-transform: uppercase;
+
+    @media screen and (min-width: 680px) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin: 0;
+    }
+}
+
+.subtitle {
+    color: variables.$color-secondary;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.description {
+    font-size: 1.2em;
+}
+

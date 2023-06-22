@@ -1,1 +1,86 @@
 @use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.hero {
+
+    background-color: variables.$color-supplementary;
+    padding: variables.$spacer;
+    @include mixins.m-bottom;
+
+
+    @media screen and (min-width: 680px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        justify-items: start;
+        align-items: center;
+        border-radius: variables.$half-spacer;
+        padding-left: 100px;
+       
+    }
+
+    
+
+    &__lastname {
+        text-transform: uppercase;
+    }
+
+    &__description {
+        @include mixins.m-bottom;
+        font-size: 1.5em;
+        text-align: center;
+
+        @media screen and (min-width: 680px) {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            text-align: start;
+          
+        }
+
+    }
+
+    &__image {
+        @include mixins.gradient;
+    
+        display: block;
+        margin: variables.$triple-spacer auto;
+        border-radius: variables.$half-spacer;
+        max-width: 100%;
+
+        @media screen and (min-width: 680px) {
+            margin: 0;
+            grid-column: 2 / -1;
+            grid-row: 1 / 4;
+            justify-self: end;
+        }
+    }
+}
+
+.about {
+    padding: variables.$spacer;
+}
+
+.icons {
+    margin: variables.$spacer;
+    text-align: center;
+}
+
+.icon-link {
+    margin-right: variables.$spacer;
+}
+
+.icon-image:hover,
+.icon-image:focus {
+
+    @include mixins.transform;
+    @include mixins.transition;
+
+    filter: invert(50%);
+  
+}
+
+
+
+
+
+

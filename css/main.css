@@ -1,27 +1,19 @@
 .header {
-  margin: 0 auto;
+  margin-bottom: 1em;
 }
-.header__title {
-  color: #a112ac;
-  text-align: center;
+@media screen and (min-width: 680px) {
+  .header {
+    margin: 1em 0;
+  }
 }
-.header__description {
-  background-color: #0e22a5;
-  background-image: linear-gradient(360deg, #0e22a5 30%, #a112ac 100%);
-  text-align: center;
-  border-radius: 0.5em;
-  padding: 0.25em 0.5em;
-  color: white;
-  text-transform: uppercase;
-}
-.header__image {
-  box-shadow: 3px 3px 8px rgb(128, 126, 126);
-  background-color: #0e22a5;
-  background-image: linear-gradient(360deg, #0e22a5 30%, #a112ac 100%);
-  display: block;
-  margin: 0 auto;
-  border-radius: 1em;
-  max-width: 100%;
+
+@media screen and (min-width: 680px) {
+  .header-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .menu {
@@ -33,33 +25,150 @@
 @media screen and (min-width: 680px) {
   .menu {
     justify-content: end;
+    margin: 0;
   }
 }
 .menu__item {
   list-style: none;
+}
+.menu__item:hover, .menu__item:active {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 .menu__link {
   text-decoration: none;
   font-weight: 700;
   color: black;
 }
+.menu__link:hover, .menu__link:active {
+  transition: all 0.3s ease-in-out;
+  color: gray;
+}
+
+.btn-link {
+  text-decoration: none;
+  display: block;
+  color: white;
+}
 
 .btn {
-  box-shadow: 3px 3px 8px rgb(128, 126, 126);
   font-weight: 700;
   background-color: #0e22a5;
   color: white;
   padding: 1em 2em;
   border-radius: 0.5em;
   text-align: center;
-  text-decoration: none;
-  display: block;
+  width: 150px;
   margin-bottom: 1em;
 }
+.btn:hover, .btn:active {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  background-color: #122cd4;
+}
 
-.btn:hover,
-.btn:focus {
-  background-color: #0a1876;
+.buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+@media screen and (min-width: 680px) {
+  .buttons {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
+
+.badge {
+  background-color: #0e22a5;
+  background-image: linear-gradient(360deg, #0e22a5 30%, #a112ac 100%);
+  text-align: center;
+  border-radius: 0.5em;
+  padding: 0.25em;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 700;
+  width: 140px;
+  margin: auto;
+}
+
+@media screen and (min-width: 680px) {
+  .badge--header {
+    margin: 0;
+  }
+}
+
+.badge--about {
+  margin: 1em auto;
+}
+
+.hero {
+  background-color: rgb(235, 244, 243);
+  padding: 1em;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 680px) {
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-items: start;
+    align-items: center;
+    border-radius: 0.5em;
+    padding-left: 100px;
+  }
+}
+.hero__lastname {
+  text-transform: uppercase;
+}
+.hero__description {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  text-align: center;
+}
+@media screen and (min-width: 680px) {
+  .hero__description {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: start;
+  }
+}
+.hero__image {
+  background-color: #0e22a5;
+  background-image: linear-gradient(360deg, #0e22a5 30%, #a112ac 100%);
+  display: block;
+  margin: 3em auto;
+  border-radius: 0.5em;
+  max-width: 100%;
+}
+@media screen and (min-width: 680px) {
+  .hero__image {
+    margin: 0;
+    grid-column: 2/-1;
+    grid-row: 1/4;
+    justify-self: end;
+  }
+}
+
+.about {
+  padding: 1em;
+}
+
+.icons {
+  margin: 1em;
+  text-align: center;
+}
+
+.icon-link {
+  margin-right: 1em;
+}
+
+.icon-image:hover,
+.icon-image:focus {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  filter: invert(50%);
 }
 
 html {
@@ -72,9 +181,39 @@ html {
   padding: 0;
 }
 
-.wrapper {
-  max-width: 1200px;
-  margin: 0px auto;
+@media screen and (min-width: 680px) {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+.title {
+  color: #a112ac;
+  text-align: center;
+  margin: 1em;
+  font-size: 2.5em;
+}
+
+.title--hero {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 680px) {
+  .title--hero {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0;
+  }
+}
+
+.subtitle {
+  color: #a112ac;
+  text-align: center;
+  font-size: 2em;
+}
+
+.description {
+  font-size: 1.2em;
 }
 
 html {

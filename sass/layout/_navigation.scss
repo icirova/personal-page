@@ -11,19 +11,34 @@
 
     @media screen and (min-width: 680px) {
         justify-content: end;
+        margin: 0;
     }
 
     
 
     &__item {
         list-style: none;
+        &:hover,
+        &:active {
+        
+            @include mixins.transform;
+            @include mixins.transition;
+    
+        }
     }
 
     &__link {
         text-decoration: none;
         font-weight: 700;
         color: black;
+
+        &:hover,
+        &:active {
+        
+           
+            @include mixins.transition;
+    
+            color: lighten(black, 50%);
+        }
     }
-
-
 }

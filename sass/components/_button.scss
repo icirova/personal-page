@@ -1,19 +1,37 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
 
-
-.btn {
-
-    @include mixins.shadow;
-    @include mixins.button;
-
+.btn-link {
     text-decoration: none;
     display: block;
-    margin-bottom: variables.$spacer;
+    color: white
+}
+.btn {
+
+    @include mixins.button;
+    @include mixins.m-bottom;
+
+    &:hover, 
+    &:active {
+        @include mixins.transform;
+        @include mixins.transition;
     
+        background-color: lighten(variables.$color-primary, 10%);
+    }
+ 
 }
 
-.btn:hover,
-.btn:focus {
-    background-color: darken(variables.$color-primary, 10%);
+    
+.buttons {
+
+    display: flex;
+    gap: variables.$spacer;
+    justify-content: center;
+
+    @media screen and (min-width: 680px) {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        
+        
+    }
 }

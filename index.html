@@ -3,20 +3,45 @@ layout: layouts/template.njk
 title: Iveta Círová
 ---
 
+<section class="hero">
+  <h1 class="title title--hero">
+    Iveta Círová
+  </h1>
 
-<sec class="about">
-
-  <h2 class="subtitle">O mě</h2>
-
-  <p class="description">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur nihil
-    quaerat, voluptatibus vitae asperiores tempore dicta amet labore nostrum non
-    quibusdam quia reiciendis quas. Fuga ad nemo saepe magnam eaque veritatis
-    magni voluptatibus unde! Iusto unde, optio dolore debitis qui mollitia ipsum.
-    Ut cupiditate aperiam suscipit est, quisquam ea explicabo.
+  <p class="hero__description">
+    Ne, vůbec nejsem workoholik. Prostě mě to baví.
   </p>
 
-  <img src="#" alt="ikona linkedin">
-  <img src="#" alt="ikona gitHub">
+  <div class="buttons">
+    <button class="btn"><a class="btn-link" href="#">CV</a></button>
+    <button class="btn"><a class="btn-link" href="#">Projekty</a></button>
+  </div>
 
-</sec>
+  <img
+    src="/images/profil-foto2.png"
+    alt="profilové foto"
+    class="hero__image"
+    width="300px"
+  />
+</section>
+
+<section class="about">
+  <h2 class="subtitle">O mně</h2>
+
+  <p class="badge badge--about">HTML, CSS, JS</p>
+
+  <p class="description">
+    Vždy mě zajímaly weby. První zkušenosti v IT jsem získala manuálním
+    testováním webů a e-shopů. Abych zlepšila své dovednosti absolvovala jsem
+    kurz Jak se stát testerem. Poté kurz Automatizace v testování, kde jsem
+    přičuchla k JavaScriptu. Byla jsem nadšená. Rozhodla jsem se dále
+    zabývat kódováním. Do světa frontend vývoje jsem se rychle zamilovala. Aktuálně navštěvuji kurz Javascriptu. Dalším krokem bude React. 
+  </p>
+
+  <div class="icons">
+    <a href="https://www.linkedin.com/in/iveta-c%C3%ADrov%C3%A1-b8638424a/" class="icon-link"><img src="/icons/linkedin_social_icon.svg" alt="ikona linkedin" class="icon-image" width="40px"/></a>
+    <a href="https://github.com/icirova" class="icon-link"><img src="/icons/github_icon.svg" alt="ikona gitHub" class="icon-image" width="40px" /></a>
+    <!-- <a href=""><img src="/icons/twitter_social_icon.svg" alt="ikona twitter" /></a> -->
+  </div>
+
+</section>

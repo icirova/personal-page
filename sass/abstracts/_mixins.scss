@@ -1,8 +1,5 @@
 @use 'variables';
 
-@mixin shadow {
-    box-shadow: 3px 3px 8px rgb(128, 126, 126);
-}
 
 @mixin gradient {
     background-color: variables.$color-primary;
@@ -16,9 +13,20 @@
     padding: variables.$spacer variables.$double-spacer;
     border-radius: variables.$half-spacer;
     text-align: center;
+    width: 150px;
 }
 
 @mixin m-bottom {
     margin-bottom: variables.$spacer;
 }
+
+@mixin transform {
+    transform: scale(1.1);
+   
+}
+
+@mixin transition {
+    transition: all 0.3s ease-in-out;
+}
+
 
