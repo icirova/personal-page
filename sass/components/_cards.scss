@@ -41,12 +41,12 @@
 
         @include mixins.m-bottom;
     }
-}
 
-.card--project {
-    margin: variables.$double-spacer 0;
-}
-
-.card--inactive {
-    opacity: 0.6;
+    &--project {
+        margin: variables.$double-spacer 0;
+    }
+    
+    &--inactive {
+        opacity: 0.7;
+    }
 }

@@ -35,9 +35,9 @@
         
             @include mixins.transition;
         }
-    }
-}
 
-.menu__link--active {
-        color: lighten(black, 50%); 
+        &--active {
+            color: lighten(black, 50%);
+        }
+    }
 }

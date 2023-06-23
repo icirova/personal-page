@@ -13,23 +13,25 @@
     margin: variables.$spacer auto;
     
     @include mixins.gradient;
-}
 
-.badge--hero {
+    &--hero {
 
-    @include mixins.display-lg {
-        margin: 0;
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        justify-self: start;
+        @include mixins.display-lg {
+            margin: 0;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            justify-self: start;
+        }
+    } 
+    
+    &--about {
+        margin-bottom: variables.$triple-spacer;  
     }
-} 
-
-.badge--about {
-    margin-bottom: variables.$triple-spacer;  
+    
+    &--card {
+        width: 200px;
+    }
 }
 
-.badge--card {
-    width: 200px;
-}
+
 

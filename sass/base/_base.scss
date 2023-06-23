@@ -16,42 +16,43 @@ html { box-sizing: border-box; }
     color:variables.$color-secondary;
     text-align: center;
     font-size: 2.5em;
-}
 
-.title--hero {
-    text-transform: uppercase;
-    margin-top: variables.$spacer;
-
-    @include mixins.display-lg {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        margin: 0;
+    &--hero {
+        text-transform: uppercase;
+        margin-top: variables.$spacer;
+    
+        @include mixins.display-lg {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            margin: 0;
+        }
     }
 }
+
+
 
 .subtitle {
     color: variables.$color-primary;
     font-size: 2em;
-}
 
-.subtitle--header {
-    text-align: center;
-    color: variables.$color-secondary;
-}
-
-.subtitle--projects {
-    font-size: 1.2;
-}
-
-.subtitle--resume {
-    color: variables.$color-primary;
-    margin: variables.$spacer 0;
+    &--about {
+        text-align: center;
+        color: variables.$color-secondary;
+    }
     
-    @include mixins.display-lg {
-        font-size: 2em;
+    &--projects {
+        font-size: 1.8em;
+    }
+    
+    &--resume {
+        color: variables.$color-primary;
+        margin: variables.$spacer 0;
+        
+        @include mixins.display-lg {
+            font-size: 2em;
+        }
     }
 }
-
 
 .description {
     font-size: 1.2em;
