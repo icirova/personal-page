@@ -50,3 +50,7 @@
 .card--project {
     margin: variables.$double-spacer 0;
 }
+
+.card--inactive {
+    opacity: 0.6;
+}
