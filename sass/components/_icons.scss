@@ -1,0 +1,21 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.icons {
+   
+    text-align: center;
+}
+
+.icon-link {
+    margin-right: variables.$spacer;
+}
+
+.icon-image:hover,
+.icon-image:focus {
+
+    @include mixins.transform;
+    @include mixins.transition;
+
+    filter: invert(50%);
+  
+}

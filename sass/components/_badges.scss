@@ -19,7 +19,7 @@
 
 
 
-.badge--header {
+.badge--hero {
     
     @media screen and (min-width: 680px) {
         margin: 0;
@@ -28,6 +28,12 @@
         justify-self: start;
     }
 } 
+
+.badge--about {
+
+    margin-bottom: variables.$triple-spacer;
+   
+}
 
 .badge--card {
     width: 200px;

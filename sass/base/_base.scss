@@ -35,9 +35,27 @@ html { box-sizing: border-box; }
 }
 
 .subtitle {
-    color: variables.$color-secondary;
-    text-align: center;
+    color: variables.$color-primary;
     font-size: 2em;
+}
+
+.subtitle--header {
+    text-align: center;
+    color: variables.$color-secondary;
+}
+
+.subtitle--projects {
+    font-size: 1.2;
+}
+
+.subtitle--resume {
+    color: variables.$color-primary;
+    margin: variables.$spacer 0;
+    
+
+    @media screen and (min-width: 680px) {
+        font-size: 2em;
+    }
 }
 
 

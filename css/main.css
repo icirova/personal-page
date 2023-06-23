@@ -25,6 +25,7 @@
 .footer__description {
   text-align: center;
   margin: 1em;
+  font-size: 0.8em;
 }
 
 .menu {
@@ -105,12 +106,16 @@
 }
 
 @media screen and (min-width: 680px) {
-  .badge--header {
+  .badge--hero {
     margin: 0;
     grid-column: 1/2;
     grid-row: 2/3;
     justify-self: start;
   }
+}
+
+.badge--about {
+  margin-bottom: 3em;
 }
 
 .badge--card {
@@ -154,6 +159,25 @@
   color: #1a34b8;
   font-weight: 700;
   margin-bottom: 1em;
+}
+
+.card--project {
+  margin: 2em 0;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icon-link {
+  margin-right: 1em;
+}
+
+.icon-image:hover,
+.icon-image:focus {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  filter: invert(50%);
 }
 
 .hero {
@@ -209,31 +233,6 @@
   margin: 3em;
 }
 
-.icons {
-  text-align: center;
-}
-
-.icon-link {
-  margin-right: 1em;
-}
-
-.icon-image:hover,
-.icon-image:focus {
-  transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
-  filter: invert(50%);
-}
-
-.resume__subtitle {
-  color: #1a34b8;
-  margin: 1em 0;
-}
-@media screen and (min-width: 680px) {
-  .resume__subtitle {
-    font-size: 2em;
-  }
-}
-
 .skills {
   margin-bottom: 2em;
 }
@@ -280,9 +279,27 @@ html {
 }
 
 .subtitle {
-  color: #a112ac;
-  text-align: center;
+  color: #1a34b8;
   font-size: 2em;
+}
+
+.subtitle--header {
+  text-align: center;
+  color: #a112ac;
+}
+
+.subtitle--projects {
+  font-size: 1.2;
+}
+
+.subtitle--resume {
+  color: #1a34b8;
+  margin: 1em 0;
+}
+@media screen and (min-width: 680px) {
+  .subtitle--resume {
+    font-size: 2em;
+  }
 }
 
 .description {

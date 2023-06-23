@@ -2,15 +2,7 @@
 @use '../abstracts/mixins';
 
 .resume {
-    &__subtitle {
-        color: variables.$color-primary;
-        margin: variables.$spacer 0;
-        
-
-        @media screen and (min-width: 680px) {
-            font-size: 2em;
-        }
-    }
+    
 }
 
 .skills {
