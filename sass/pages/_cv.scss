@@ -1,14 +1,10 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
 
-.resume {
-    
-}
-
 .skills {
-
     margin-bottom: variables.$double-spacer;
-    @media screen and (min-width: 680px) {
+
+    @include mixins.display-lg {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }

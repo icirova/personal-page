@@ -6,28 +6,23 @@ html { box-sizing: border-box; }
 
 .wrapper {
 
-    
-
-    @media screen and (min-width: 680px) {
+    @include mixins.display-lg {
         margin: 0 auto;
         max-width: 1200px;
-    }
-    
+    }   
 }
 
 .title {
     color:variables.$color-secondary;
     text-align: center;
     font-size: 2.5em;
-
 }
 
 .title--hero {
-
     text-transform: uppercase;
     margin-top: variables.$spacer;
 
-    @media screen and (min-width: 680px) {
+    @include mixins.display-lg {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         margin: 0;
@@ -52,8 +47,7 @@ html { box-sizing: border-box; }
     color: variables.$color-primary;
     margin: variables.$spacer 0;
     
-
-    @media screen and (min-width: 680px) {
+    @include mixins.display-lg {
         font-size: 2em;
     }
 }
@@ -68,8 +62,6 @@ html { box-sizing: border-box; }
 }
 
 .link {
-
-    // text-decoration: none;
     color: variables.$color-primary;
 
     &:hover,

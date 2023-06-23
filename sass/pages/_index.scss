@@ -2,13 +2,12 @@
 @use '../abstracts/mixins';
 
 .hero {
-
-    background-color: variables.$color-supplementary;
     padding: variables.$spacer;
+    background-color: variables.$color-supplementary;
+
     @include mixins.m-bottom;
-
-
-    @media screen and (min-width: 680px) {
+    @include mixins.display-lg {
+        
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, auto);
@@ -16,10 +15,7 @@
         align-items: center;
         border-radius: variables.$half-spacer;
         padding-left: 100px;
-       
     }
-
-    
 
     &__lastname {
         text-transform: uppercase;
@@ -30,24 +26,22 @@
         font-size: 1.5em;
         text-align: center;
 
-        @media screen and (min-width: 680px) {
+        @include mixins.display-lg {
             grid-column: 1 / 2;
             grid-row: 3 / 4;
             text-align: start;
-          
         }
 
     }
 
     &__image {
-        @include mixins.gradient;
-    
         display: block;
         margin: variables.$triple-spacer auto;
         border-radius: variables.$half-spacer;
         max-width: 100%;
-
-        @media screen and (min-width: 680px) {
+        
+        @include mixins.gradient;
+        @include mixins.display-lg {
             margin: 0;
             grid-column: 2 / -1;
             grid-row: 1 / 5;
@@ -55,7 +49,6 @@
         }
     }
 }
-
 
 .about {
     padding: variables.$spacer;

@@ -32,8 +32,10 @@
     transition: all 0.3s ease-in-out;
 }
 
-// @mixin mq-small {
-//     @media screen and (min-width: variables.$screen-sm)
-// }
+@mixin display-lg {
+    @media screen and (min-width: variables.$screen-lg) {
+        @content
+    }
+}
 
 

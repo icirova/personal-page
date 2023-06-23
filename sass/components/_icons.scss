@@ -2,7 +2,6 @@
 @use '../abstracts/mixins';
 
 .icons {
-   
     text-align: center;
 }
 
@@ -12,10 +11,10 @@
 
 .icon-image:hover,
 .icon-image:focus {
+    filter: invert(50%);
 
     @include mixins.transform;
     @include mixins.transition;
 
-    filter: invert(50%);
   
 }

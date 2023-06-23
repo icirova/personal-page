@@ -5,7 +5,7 @@
     background-color: variables.$color-supplementary;
     padding: variables.$spacer;
     
-    @media screen and (min-width: 680px) {
+    @include mixins.display-lg {
         border-radius: variables.$half-spacer;
     }
 
@@ -14,8 +14,6 @@
         margin: variables.$spacer;
         font-size: 0.8em;
     }
-
-
 }
 
 

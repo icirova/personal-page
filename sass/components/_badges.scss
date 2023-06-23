@@ -1,10 +1,7 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
 
-
 .badge {
-    @include mixins.gradient;
-
     text-align: center;
     border-radius: variables.$half-spacer;
     padding: variables.$mini-spacer;
@@ -15,13 +12,12 @@
     width: 140px;
     margin: variables.$spacer auto;
     
+    @include mixins.gradient;
 }
 
-
-
 .badge--hero {
-    
-    @media screen and (min-width: 680px) {
+
+    @include mixins.display-lg {
         margin: 0;
         grid-column: 1 / 2;
         grid-row: 2 / 3;
@@ -30,17 +26,10 @@
 } 
 
 .badge--about {
-
-    margin-bottom: variables.$triple-spacer;
-   
+    margin-bottom: variables.$triple-spacer;  
 }
 
 .badge--card {
     width: 200px;
-
-    @media screen and (min-width: 680px) {
-        // margin: variables.$spacer 0;
-    }
-
 }
 

@@ -53,7 +53,11 @@
   color: black;
 }
 .menu__link:hover, .menu__link:active {
+  color: gray;
   transition: all 0.3s ease-in-out;
+}
+
+.menu__link--active {
   color: gray;
 }
 
@@ -74,9 +78,9 @@
   margin-bottom: 1em;
 }
 .btn:hover, .btn:active {
+  background-color: #2544e0;
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
-  background-color: #2544e0;
 }
 
 .buttons {
@@ -92,8 +96,6 @@
 }
 
 .badge {
-  background-color: #1a34b8;
-  background-image: linear-gradient(360deg, #1a34b8 30%, #a112ac 100%);
   text-align: center;
   border-radius: 0.5em;
   padding: 0.25em;
@@ -103,6 +105,8 @@
   font-weight: 700;
   width: 140px;
   margin: 1em auto;
+  background-color: #1a34b8;
+  background-image: linear-gradient(360deg, #1a34b8 30%, #a112ac 100%);
 }
 
 @media screen and (min-width: 680px) {
@@ -121,6 +125,7 @@
 .badge--card {
   width: 200px;
 }
+
 .resume {
   padding: 1em;
 }
@@ -147,8 +152,8 @@
   }
 }
 .card__header {
-  margin-bottom: 1em;
   text-align: center;
+  margin-bottom: 1em;
 }
 @media screen and (min-width: 680px) {
   .card__header {
@@ -179,14 +184,14 @@
 
 .icon-image:hover,
 .icon-image:focus {
+  filter: invert(50%);
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
-  filter: invert(50%);
 }
 
 .hero {
-  background-color: rgb(235, 244, 243);
   padding: 1em;
+  background-color: rgb(235, 244, 243);
   margin-bottom: 1em;
 }
 @media screen and (min-width: 680px) {
@@ -216,12 +221,12 @@
   }
 }
 .hero__image {
-  background-color: #1a34b8;
-  background-image: linear-gradient(360deg, #1a34b8 30%, #a112ac 100%);
   display: block;
   margin: 3em auto;
   border-radius: 0.5em;
   max-width: 100%;
+  background-color: #1a34b8;
+  background-image: linear-gradient(360deg, #1a34b8 30%, #a112ac 100%);
 }
 @media screen and (min-width: 680px) {
   .hero__image {

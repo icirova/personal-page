@@ -4,23 +4,18 @@
 
 .header {
 
-       
-
-        @media screen and (min-width: 680px) {
-            margin: variables.$spacer 0;
-        }
-
-
-    
+    @include mixins.display-lg {
+        margin: variables.$spacer 0;
+    } 
 }
 
 .header-wrapper {
 
-    @media screen and (min-width: 680px) {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+    @include mixins.display-lg {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 

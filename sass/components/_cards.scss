@@ -4,14 +4,12 @@
 .resume {
     padding: variables.$spacer;
 
-    @media screen and (min-width: 680px) {
+    @include mixins.display-lg {
         padding: 0;
     }
 }
 
 .card {
-
-
     border-radius: variables.$half-spacer;
     padding: variables.$spacer;
     width: 100%;
@@ -19,7 +17,7 @@
     background-color: variables.$color-supplementary;
     min-height: 200px;
 
-    @media screen and (min-width: 680px) {
+    @include mixins.display-lg {
             display: flex;
             gap: variables.$double-spacer;
             justify-content: space-between;
@@ -28,12 +26,11 @@
         }
 
     &__header {
-
-        @include mixins.m-bottom;
         text-align: center;
 
-        @media screen and (min-width: 680px) {
-            // text-align: start;
+        @include mixins.m-bottom;
+
+        @include mixins.display-lg {
             flex: 0 0 30%;
         }
     }
@@ -42,9 +39,8 @@
         color: variables.$color-primary;
         font-weight: 700;
 
-        @include mixins.m-bottom
+        @include mixins.m-bottom;
     }
-
 }
 
 .card--project {
