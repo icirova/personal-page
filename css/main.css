@@ -169,11 +169,9 @@
 }
 
 .icons {
-  text-align: center;
-}
-
-.icon-link {
-  margin-right: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
 
 .icon-image:hover,

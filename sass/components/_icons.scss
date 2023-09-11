@@ -2,11 +2,10 @@
 @use '../abstracts/mixins';
 
 .icons {
-    text-align: center;
-}
 
-.icon-link {
-    margin-right: variables.$spacer;
+    display: flex;
+    justify-content: center;
+    gap: variables.$spacer;
 }
 
 .icon-image:hover,
