@@ -106,7 +106,8 @@
 
 button .circle {
   position: absolute;
-  background-color: #7e90ed;
+  background-color: #a112ac;
+  z-index: -1;
   width: 100px;
   height: 100px;
   border-radius: 50%;
