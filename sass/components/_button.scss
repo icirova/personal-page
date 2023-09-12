@@ -27,6 +27,11 @@
         @include mixins.transform;
         @include mixins.transition;
     }
+
+    @include mixins.display-lg {
+        width: 120px;
+    }
+
 }
 
     
