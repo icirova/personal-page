@@ -16,7 +16,8 @@
     padding: variables.$spacer variables.$double-spacer;
     border-radius: variables.$half-spacer;
     text-align: center;
-    width: 150px;
+    width: 120px;
+    letter-spacing: 1px;
 }
 
 @mixin m-bottom {

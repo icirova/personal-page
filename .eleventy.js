@@ -3,8 +3,9 @@ module.exports=function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("icons");
     eleventyConfig.addPassthroughCopy("certificate");
+    eleventyConfig.addPassthroughCopy("scripts");
 
-    //eleventyConfig.addPassthroughCopy("**/*.js");
+    eleventyConfig.addPassthroughCopy("**/*.js");
 
     return{
         templateFormats: ["njk", "html", "md", "liquid"],
