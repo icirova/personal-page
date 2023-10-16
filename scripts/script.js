@@ -3,7 +3,7 @@
 
 
 const efect = function (event, button) {
-    //získání souřadnic polohy tlačítka při kliku (jen okraje)
+    //získání souřadnic polohy kliku
     const x = event.clientX;
     const y = event.clientY;
 
