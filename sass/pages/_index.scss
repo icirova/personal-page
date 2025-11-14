@@ -4,6 +4,10 @@
 .hero {
     padding: variables.$spacer;
     background-color: variables.$color-supplementary;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     @include mixins.m-bottom;
     @include mixins.display-lg {
@@ -39,10 +43,11 @@
         margin: variables.$triple-spacer auto;
         border-radius: variables.$half-spacer;
         max-width: 100%;
+   
         
         @include mixins.gradient;
         @include mixins.display-lg {
-            margin: 0;
+       
             grid-column: 2 / -1;
             grid-row: 1 / 5;
             justify-self: end;

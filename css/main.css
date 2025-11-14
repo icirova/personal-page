@@ -74,6 +74,7 @@
   color: white;
   padding: 1em 2em;
   border-radius: 0.5em;
+  border: none;
   text-align: center;
   width: 150px;
   height: 55px;
@@ -211,6 +212,10 @@ button .circle {
 .hero {
   padding: 1em;
   background-color: rgb(235, 244, 243);
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 1em;
 }
 @media screen and (min-width: 680px) {
