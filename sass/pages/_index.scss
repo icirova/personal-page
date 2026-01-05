@@ -4,21 +4,22 @@
 .hero {
     padding: variables.$spacer;
     background-color: variables.$color-supplementary;
-    min-height: 320px;
+    min-height: 360px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: variables.$spacer;
+    text-align: center;
 
     @include mixins.m-bottom;
     @include mixins.display-lg {
-        
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, auto);
-        justify-items: start;
-        align-items: center;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        grid-template-rows: auto auto auto auto;
+        column-gap: variables.$double-spacer;
+        align-items: start;
         border-radius: variables.$half-spacer;
-        padding-left: 100px;
+        padding: variables.$double-spacer;
+        text-align: left;
     }
 
     &__lastname {
@@ -27,7 +28,11 @@
 
     &__description {
         @include mixins.m-bottom;
-        font-size: 1.5em;
+        font-size: 1.2em;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: variables.$color-primary;
+        line-height: 1.5;
         text-align: center;
 
         @include mixins.display-lg {
@@ -38,31 +43,117 @@
 
     }
 
+    &__badges {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: variables.$mini-spacer;
+        margin: variables.$mini-spacer 0 variables.$spacer;
+
+        @include mixins.display-lg {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            justify-content: flex-start;
+            margin: variables.$mini-spacer 0 variables.$spacer;
+        }
+    }
+
+    .description--hero {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mixins.display-lg {
+            text-align: start;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .badge {
+        width: fit-content;
+        padding: 0.25em 0.7em;
+        white-space: nowrap;
+        margin: 0;
+    }
+
+    .title--hero {
+        font-size: 2.6em;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        margin-top: 0;
+        text-align: center;
+
+        @include mixins.display-lg {
+            font-size: 3.4em;
+            text-align: start;
+        }
+    }
+
+    .description {
+        max-width: 48ch;
+        line-height: 1.7;
+        text-align: center;
+        margin-bottom: variables.$double-spacer;
+
+        @include mixins.display-lg {
+            text-align: start;
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+    }
+
+    .buttons {
+        margin-top: auto;
+
+        @include mixins.display-lg {
+            grid-column: 1 / 2;
+            grid-row: 5 / 6;
+            align-self: start;
+        }
+    }
+
     &__image {
-        display: block;
-        margin: variables.$triple-spacer auto;
+        display: none;
+        margin: variables.$double-spacer auto 0;
         border-radius: variables.$half-spacer;
         max-width: 100%;
    
         
         @include mixins.gradient;
         @include mixins.display-lg {
-       
+            display: block;
             grid-column: 2 / -1;
-            grid-row: 1 / 5;
-            justify-self: end;
+            grid-row: 1 / -1;
+            justify-self: center;
+            align-self: center;
         }
     }
 }
 
-.about {
-    padding: variables.$spacer;
-    margin: variables.$triple-spacer;
+.buttons--hero {
+    
+    @include mixins.display-lg {
+            justify-content: start;
+        }
 }
 
-.ai {
+.about,
+.ai,
+.tech,
+.free-time {
     padding: variables.$spacer;
-    margin: variables.$triple-spacer;
+    margin: variables.$spacer;
+}
+
+.subtitle--about,
+.subtitle--ai,
+.subtitle--tech,
+.subtitle--free {
+    text-align: start;
+    color: variables.$color-secondary;
+    margin-bottom: variables.$half-spacer;
 }
 
 .ai-tools {
@@ -80,18 +171,15 @@
   font-weight: 600;
 }
 
-
-.tech {
-  margin: 4rem 0;
+.tech-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
 }
 
-.tech h2 {
-  margin-bottom: 1rem;
-}
-
-.tech-line {
-  margin: 0.25rem 0;
-  line-height: 1.6;
+.tech-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
 }
 
 .tech .accent {
@@ -102,32 +190,3 @@
   opacity: 0.7;
   font-size: 0.9em;
 }
-
-.free-time {
-  margin: 4rem 0;
-  max-width: 640px;
-}
-
-.free-time h2 {
-  margin-bottom: 1rem;
-}
-
-.free-time p {
-  line-height: 1.6;
-  color: #444;
-}
-
-.free-time a {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-
-.free-time a:hover {
-  opacity: 0.7;
-}
-
-
-
-

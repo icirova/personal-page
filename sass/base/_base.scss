@@ -35,10 +35,7 @@ html { box-sizing: border-box; }
     color: variables.$color-primary;
     font-size: 2em;
 
-    &--about {
-        text-align: center;
-        color: variables.$color-secondary;
-    }
+   
     
     &--projects {
         font-size: 1.8em;
@@ -55,7 +52,7 @@ html { box-sizing: border-box; }
 }
 
 .description {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 20px;
 }
 

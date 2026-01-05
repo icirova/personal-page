@@ -13,6 +13,8 @@
     //pro efekt na tlačítkách
     overflow: hidden;
     position: relative;
+    border: none;
+    transition: background-color 0.2s ease;
   
 
     
@@ -24,9 +26,6 @@
     &:hover, 
     &:active {
         background-color: lighten(variables.$color-primary, 10%);
-
-        @include mixins.transform;
-        @include mixins.transition;
     }
 
     @include mixins.display-lg {
@@ -34,6 +33,18 @@
         height: 45px;
     }
 
+}
+
+.btn--secondary {
+    background-color: transparent;
+    color: variables.$color-primary;
+    border: 2px solid variables.$color-primary;
+}
+
+.btn--secondary:hover,
+.btn--secondary:active {
+    background-color: variables.$color-primary;
+    color: white;
 }
 
     
