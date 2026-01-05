@@ -131,8 +131,8 @@ button .circle {
   font-weight: 700;
   width: 140px;
   margin: 1em auto;
-  background-color: rgb(215.5714285714, 221.1428571429, 249.4285714286);
-  background-image: linear-gradient(360deg, rgb(215.5714285714, 221.1428571429, 249.4285714286) 30%, rgb(245.0789473684, 196.1578947368, 248.8421052632) 100%);
+  background-color: #1a34b8;
+  background-image: linear-gradient(360deg, #1a34b8 30%, #a112ac 100%);
 }
 @media screen and (min-width: 680px) {
   .badge--hero {
@@ -248,8 +248,8 @@ button .circle {
   margin: 3em auto;
   border-radius: 0.5em;
   max-width: 100%;
-  background-color: rgb(215.5714285714, 221.1428571429, 249.4285714286);
-  background-image: linear-gradient(360deg, rgb(215.5714285714, 221.1428571429, 249.4285714286) 30%, rgb(245.0789473684, 196.1578947368, 248.8421052632) 100%);
+  background-color: #1a34b8;
+  background-image: linear-gradient(360deg, #1a34b8 30%, #a112ac 100%);
 }
 @media screen and (min-width: 680px) {
   .hero__image {
@@ -262,6 +262,73 @@ button .circle {
 .about {
   padding: 1em;
   margin: 3em;
+}
+
+.ai {
+  padding: 1em;
+  margin: 3em;
+}
+
+.ai-tools {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.ai-tools li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.ai-tools strong {
+  font-weight: 600;
+}
+
+.tech {
+  margin: 4rem 0;
+}
+
+.tech h2 {
+  margin-bottom: 1rem;
+}
+
+.tech-line {
+  margin: 0.25rem 0;
+  line-height: 1.6;
+}
+
+.tech .accent {
+  font-weight: 600;
+}
+
+.tech .muted {
+  opacity: 0.7;
+  font-size: 0.9em;
+}
+
+.free-time {
+  margin: 4rem 0;
+  max-width: 640px;
+}
+
+.free-time h2 {
+  margin-bottom: 1rem;
+}
+
+.free-time p {
+  line-height: 1.6;
+  color: #444;
+}
+
+.free-time a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.free-time a:hover {
+  opacity: 0.7;
 }
 
 .skills {

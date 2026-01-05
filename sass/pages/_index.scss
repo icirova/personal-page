@@ -60,8 +60,73 @@
     margin: variables.$triple-spacer;
 }
 
+.ai {
+    padding: variables.$spacer;
+    margin: variables.$triple-spacer;
+}
+
+.ai-tools {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.ai-tools li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.ai-tools strong {
+  font-weight: 600;
+}
 
 
+.tech {
+  margin: 4rem 0;
+}
+
+.tech h2 {
+  margin-bottom: 1rem;
+}
+
+.tech-line {
+  margin: 0.25rem 0;
+  line-height: 1.6;
+}
+
+.tech .accent {
+  font-weight: 600;
+}
+
+.tech .muted {
+  opacity: 0.7;
+  font-size: 0.9em;
+}
+
+.free-time {
+  margin: 4rem 0;
+  max-width: 640px;
+}
+
+.free-time h2 {
+  margin-bottom: 1rem;
+}
+
+.free-time p {
+  line-height: 1.6;
+  color: #444;
+}
+
+.free-time a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.free-time a:hover {
+  opacity: 0.7;
+}
 
 
 
