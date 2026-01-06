@@ -12,6 +12,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
+    line-height: 1.2;
     transition: background-color 0.2s ease;
   
 
@@ -19,16 +21,16 @@
     
 
     @include mixins.button;
+    font-size: 0.95em;
+    padding: 0.8em 1.6em;
+    width: auto;
+    height: auto;
+    min-width: 140px;
     @include mixins.m-bottom;
 
     &:hover, 
     &:active {
         background-color: lighten(variables.$color-accent, 10%);
-    }
-
-    @include mixins.display-lg {
-        width: 120px;
-        height: 45px;
     }
 
 }
@@ -37,6 +39,10 @@
     background-color: transparent;
     color: variables.$color-accent;
     border: 2px solid variables.$color-accent;
+}
+
+.btn--wide {
+    min-width: 180px;
 }
 
 .btn--secondary:hover,

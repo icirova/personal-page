@@ -137,6 +137,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
+  line-height: 1.2;
   transition: background-color 0.2s ease;
   font-weight: 700;
   background-color: #2f43b6;
@@ -147,22 +149,25 @@
   width: 150px;
   height: 55px;
   letter-spacing: 1px;
+  font-size: 0.95em;
+  padding: 0.8em 1.6em;
+  width: auto;
+  height: auto;
+  min-width: 140px;
   margin-bottom: 1em;
 }
 .btn:hover, .btn:active {
   background-color: rgb(72.2052401747, 92.2925764192, 207.7947598253);
-}
-@media screen and (min-width: 680px) {
-  .btn {
-    width: 120px;
-    height: 45px;
-  }
 }
 
 .btn--secondary {
   background-color: transparent;
   color: #2f43b6;
   border: 2px solid #2f43b6;
+}
+
+.btn--wide {
+  min-width: 180px;
 }
 
 .btn--secondary:hover,
@@ -506,6 +511,17 @@ button .circle {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2em;
+  }
+}
+
+.resume__actions {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0 2em;
+}
+@media screen and (min-width: 680px) {
+  .resume__actions {
+    justify-content: flex-start;
   }
 }
 

@@ -11,6 +11,16 @@
     }
 }
 
+.resume__actions {
+    display: flex;
+    justify-content: center;
+    margin: variables.$spacer 0 variables.$double-spacer;
+
+    @include mixins.display-lg {
+        justify-content: flex-start;
+    }
+}
+
 .skill-group {
     margin-bottom: variables.$double-spacer;
 }
