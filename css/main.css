@@ -248,6 +248,7 @@ button .circle {
     gap: 2em;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 .card__header {
@@ -280,6 +281,23 @@ button .circle {
   padding: 0.25em 0.6em;
   border-radius: 0.5em;
   margin-bottom: 1em;
+}
+.card__date--link {
+  background: none;
+  border: none;
+  padding: 0;
+}
+@media screen and (min-width: 680px) {
+  .card__description,
+  .card .card-description {
+    flex: 1 1 60%;
+    min-width: 0;
+  }
+}
+@media screen and (min-width: 680px) {
+  .card__description--meta {
+    flex-basis: 100%;
+  }
 }
 .card--project {
   margin: 2em 0;
