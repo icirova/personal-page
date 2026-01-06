@@ -2,19 +2,24 @@
 @use '../abstracts/mixins';
 
 .badge {
-    text-align: center;
+    display: inline-block;
     border-radius: variables.$half-spacer;
-    padding: variables.$mini-spacer;
-    color:white;
-    text-transform: uppercase;
-    font-size: 0.8em;
+    padding: 0.25em 0.6em;
+    color: variables.$color-primary;
+    text-transform: none;
+    font-size: 0.75em;
     font-weight: 700;
-    width: 140px;
-    margin: variables.$spacer auto;
-    
-    @include mixins.gradient;
+    letter-spacing: 0.02em;
+    min-width: 4.2em;
+    margin: 0 0 variables.$mini-spacer 0;
+    background: rgba(variables.$color-primary, 0.12);
+    border: 1px solid rgba(variables.$color-primary, 0.2);
 
     &--hero {
+        color: white;
+        background-color: variables.$color-secondary;
+        border: 1px solid rgba(variables.$color-secondary, 0.35);
+        box-shadow: 0 6px 14px rgba(variables.$color-secondary, 0.18);
 
         @include mixins.display-lg {
             margin: 0;
@@ -23,14 +28,7 @@
             justify-self: start;
         }
     } 
-    
-    &--about {
-        margin-bottom: variables.$triple-spacer;  
-    }
-    
-    &--card {
-        width: 200px;
-    }
+        
 }
 
 

@@ -1,3 +1,39 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
 
+.contact {
+    padding: variables.$spacer;
+    margin: variables.$spacer;
+    text-align: center;
+
+    @include mixins.display-lg {
+        text-align: left;
+    }
+}
+
+.contact__lead {
+    line-height: 1.6;
+    margin: variables.$spacer 0 variables.$double-spacer;
+    max-width: 52ch;
+}
+
+.contact__primary {
+    margin-bottom: variables.$double-spacer;
+}
+
+.contact__email {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: variables.$color-primary;
+}
+
+.contact__links {
+    display: flex;
+    gap: variables.$spacer;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include mixins.display-lg {
+        justify-content: flex-start;
+    }
+}

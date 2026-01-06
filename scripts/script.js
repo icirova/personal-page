@@ -28,14 +28,31 @@ const efect = function (event, button) {
 const cvButton = document.querySelector('#btn-cv');
 const projectsButton = document.querySelector('#btn-projects');
 
-cvButton.addEventListener('click', function (event) {
-    efect(event, this);
-    setTimeout(() => {
-        window.location.href = '/cv/';
-    }, 150);
-});
+if (cvButton) {
+    cvButton.addEventListener('click', function (event) {
+        efect(event, this);
+        setTimeout(() => {
+            window.location.href = '/cv/';
+        }, 150);
+    });
+}
 
-projectsButton.addEventListener('click', function (event) {
-    efect (event, this);
-    setTimeout(() => window.location.href = '/projekty/', 100);
-});
+if (projectsButton) {
+    projectsButton.addEventListener('click', function (event) {
+        efect (event, this);
+        setTimeout(() => window.location.href = '/projekty/', 100);
+    });
+}
+
+const emailElements = document.querySelectorAll('.js-email');
+
+if (emailElements.length) {
+    emailElements.forEach((emailElement) => {
+        const user = emailElement.getAttribute('data-user');
+        const domain = emailElement.getAttribute('data-domain');
+
+        if (user && domain) {
+            emailElement.textContent = `${user}@${domain}`;
+        }
+    });
+}

@@ -18,18 +18,5 @@
 .skill-group h3 {
     font-size: 1.1em;
     margin-bottom: variables.$spacer;
-    color: variables.$color-secondary;
-}
-
-.skills .badge {
-    display: inline-block;
-    width: auto;
-    margin: 0 0 variables.$mini-spacer 0;
-    padding: 0.25em 0.6em;
-    font-size: 0.75em;
-    font-weight: 600;
-    text-transform: none;
-    letter-spacing: 0.02em;
-    background: rgba(26, 52, 184, 0.08);
-    color: variables.$color-primary;
+    color: variables.$color-accent;
 }

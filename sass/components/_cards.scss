@@ -27,9 +27,26 @@
         }
     }
 
+    &__title {
+        font-size: 1.15em;
+        color: variables.$color-accent;
+        margin-bottom: variables.$mini-spacer;
+
+        @include mixins.display-lg {
+            font-size: 1.25em;
+        }
+    }
+
     &__date {
+        display: inline-block;
         color: variables.$color-primary;
-        font-weight: 700;
+        font-weight: 600;
+        font-size: 0.75em;
+        letter-spacing: 0.02em;
+        background: rgba(variables.$color-primary, 0.12);
+        border: 1px solid rgba(variables.$color-primary, 0.2);
+        padding: 0.25em 0.6em;
+        border-radius: variables.$half-spacer;
 
         @include mixins.m-bottom;
     }

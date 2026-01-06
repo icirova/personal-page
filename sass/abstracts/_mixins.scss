@@ -11,7 +11,7 @@
 
 @mixin button {
     font-weight: 700;
-    background-color: variables.$color-primary;
+    background-color: variables.$color-accent;
     color: white;
     padding: variables.$spacer variables.$double-spacer;
     border-radius: variables.$half-spacer;

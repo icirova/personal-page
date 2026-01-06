@@ -6,6 +6,19 @@
     display: flex;
     justify-content: center;
     gap: variables.$spacer;
+    margin-top: variables.$half-spacer;
+}
+
+.project .icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em;
+}
+
+.project .icon-image {
+    width: 30px;
+    height: 30px;
 }
 
 .icon-image:hover,

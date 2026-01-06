@@ -3,21 +3,89 @@
 
 .footer {
     background-color: variables.$color-supplementary;
-    padding: variables.$spacer;
+    padding: variables.$double-spacer variables.$spacer;
     margin-left: calc(variables.$spacer * -1);
     margin-right: calc(variables.$spacer * -1);
     width: calc(100% + (variables.$spacer * 2));
+   
     
     @include mixins.display-lg {
         border-radius: variables.$half-spacer;
     }
 
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: variables.$double-spacer;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 variables.$double-spacer;
+
+        @include mixins.display-lg {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            align-items: center;
+            gap: variables.$double-spacer;
+        }
+
+    }
+
+    &__title {
+        font-weight: 700;
+        color: variables.$color-primary;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 0.9em;
+    }
+
+    &__note {
+        font-size: 0.95em;
+        line-height: 1.6;
+        color: variables.$color-primary;
+        opacity: 0.85;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: variables.$mini-spacer;
+        align-items: center;
+
+        @include mixins.display-lg {
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
+
+    &__col:nth-child(2) {
+        @include mixins.display-lg {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__col:nth-child(3) {
+        @include mixins.display-lg {
+            align-items: flex-end;
+            text-align: right;
+        }
+    }
+
     &__description {
         text-align: center;
-        margin: variables.$spacer;
+        margin: variables.$mini-spacer 0;
         font-size: 0.8em;
+        opacity: 0.8;
+
+        @include mixins.display-lg {
+            text-align: left;
+        }
+    }
+
+    &__description--fine {
+        font-size: 0.75em;
+        opacity: 0.65;
     }
 }
-
-
-

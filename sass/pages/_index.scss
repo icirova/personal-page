@@ -25,16 +25,12 @@
         text-align: left;
     }
 
-    &__lastname {
-        text-transform: uppercase;
-    }
-
     &__description {
         @include mixins.m-bottom;
         font-size: 1.2em;
         font-weight: 600;
         letter-spacing: 0.02em;
-        color: variables.$color-primary;
+        color: variables.$color-accent;
         line-height: 1.5;
         text-align: center;
 
@@ -82,14 +78,14 @@
     }
 
     .title--hero {
-        font-size: 2.6em;
+        font-size: 2.4em;
         line-height: 1.1;
         letter-spacing: 0.02em;
         margin-top: 0;
         text-align: center;
 
         @include mixins.display-lg {
-            font-size: 3.4em;
+            font-size: 3.1em;
             text-align: start;
         }
     }
@@ -122,9 +118,9 @@
         margin: variables.$double-spacer auto 0;
         border-radius: variables.$half-spacer;
         max-width: 100%;
-   
-        
-        @include mixins.gradient;
+        border: 1px solid rgba(variables.$color-accent, 0.12);
+        box-shadow: 0 12px 28px rgba(variables.$color-accent, 0.18);
+
         @include mixins.display-lg {
             display: block;
             grid-column: 2 / -1;
