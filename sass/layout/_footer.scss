@@ -4,6 +4,9 @@
 .footer {
     background-color: variables.$color-supplementary;
     padding: variables.$spacer;
+    margin-left: calc(variables.$spacer * -1);
+    margin-right: calc(variables.$spacer * -1);
+    width: calc(100% + (variables.$spacer * 2));
     
     @include mixins.display-lg {
         border-radius: variables.$half-spacer;

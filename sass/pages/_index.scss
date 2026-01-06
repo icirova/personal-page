@@ -9,6 +9,9 @@
     flex-direction: column;
     gap: variables.$spacer;
     text-align: center;
+    margin-left: calc(variables.$spacer * -1);
+    margin-right: calc(variables.$spacer * -1);
+    width: calc(100% + (variables.$spacer * 2));
 
     @include mixins.m-bottom;
     @include mixins.display-lg {

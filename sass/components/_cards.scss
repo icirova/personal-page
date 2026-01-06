@@ -1,14 +1,6 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
 
-.resume {
-    padding: variables.$spacer;
-
-    @include mixins.display-lg {
-        padding: 0;
-    }
-}
-
 .card {
     border-radius: variables.$half-spacer;
     padding: variables.$spacer;
