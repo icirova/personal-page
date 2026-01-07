@@ -3,6 +3,7 @@
 
 .footer {
     background-color: variables.$color-supplementary;
+    border-top: 1px solid rgba(variables.$color-primary, 0.12);
     padding: variables.$double-spacer variables.$spacer;
     margin-left: calc(variables.$spacer * -1);
     margin-right: calc(variables.$spacer * -1);
@@ -10,7 +11,11 @@
    
     
     @include mixins.display-lg {
-        border-radius: variables.$half-spacer;
+        border-radius: 0;
+        padding: variables.$spacer variables.$spacer;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
 
     &__content {
@@ -21,13 +26,14 @@
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 variables.$double-spacer;
+        padding: 0 variables.$half-spacer;
 
         @include mixins.display-lg {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             align-items: center;
             gap: variables.$double-spacer;
+            padding: 0 variables.$spacer;
         }
 
     }

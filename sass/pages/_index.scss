@@ -4,6 +4,7 @@
 .hero {
     padding: variables.$spacer;
     background-color: variables.$color-supplementary;
+    border-top: 1px solid rgba(variables.$color-primary, 0.12);
     min-height: 360px;
     display: flex;
     flex-direction: column;
@@ -20,9 +21,12 @@
         grid-template-rows: auto auto auto auto;
         column-gap: variables.$double-spacer;
         align-items: start;
-        border-radius: variables.$half-spacer;
+        border-radius: 0;
         padding: variables.$double-spacer;
         text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
 
     &__description {

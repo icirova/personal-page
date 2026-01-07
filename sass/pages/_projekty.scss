@@ -1,0 +1,8 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.project {
+    @include mixins.display-lg {
+        padding: 0 variables.$double-spacer;
+    }
+}
