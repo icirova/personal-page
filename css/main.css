@@ -225,6 +225,13 @@ button .circle {
   background: rgba(93, 37, 179, 0.12);
   border: 1px solid rgba(93, 37, 179, 0.2);
 }
+.badge--progress {
+  color: #0f5132;
+  background: rgba(25, 135, 84, 0.16);
+  border: 1px solid rgba(25, 135, 84, 0.35);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
 .badge--hero {
   color: white;
   background-color: #5d25b3;
@@ -238,6 +245,16 @@ button .circle {
     grid-row: 2/3;
     justify-self: start;
   }
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4em 0.5em;
+  margin: 0 0 0.25em 0;
+}
+.badges .badge {
+  margin: 0;
 }
 
 .card {
@@ -329,6 +346,37 @@ button .circle {
 .project .icon-image {
   width: 30px;
   height: 30px;
+}
+
+.project .project-thumb {
+  display: block;
+  width: 100%;
+  margin: 0.5em auto 1em;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project .project-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5em;
+  border: 1px solid rgba(93, 37, 179, 0.12);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+@media screen and (min-width: 680px) {
+  .project .card--project .card__header {
+    flex: 0 0 25%;
+  }
+  .project .card--project .project-thumb {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin: 0;
+  }
+  .project .card--project .card-description {
+    flex: 1 1 45%;
+  }
 }
 
 .icon-image:hover,

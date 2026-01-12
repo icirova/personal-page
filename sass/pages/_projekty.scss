@@ -5,4 +5,39 @@
     @include mixins.display-lg {
         padding: 0 variables.$double-spacer;
     }
+
+    .project-thumb {
+        display: block;
+        width: 100%;
+        margin: variables.$half-spacer auto variables.$spacer;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .project-thumb img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: variables.$half-spacer;
+        border: 1px solid rgba(variables.$color-primary, 0.12);
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+    }
+
+    .card--project {
+        @include mixins.display-lg {
+            .card__header {
+                flex: 0 0 25%;
+            }
+
+            .project-thumb {
+                flex: 0 0 30%;
+                max-width: 30%;
+                margin: 0;
+            }
+
+            .card-description {
+                flex: 1 1 45%;
+            }
+        }
+    }
 }

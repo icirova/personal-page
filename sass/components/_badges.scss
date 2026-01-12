@@ -15,6 +15,14 @@
     background: rgba(variables.$color-primary, 0.12);
     border: 1px solid rgba(variables.$color-primary, 0.2);
 
+    &--progress {
+        color: #0f5132;
+        background: rgba(25, 135, 84, 0.16);
+        border: 1px solid rgba(25, 135, 84, 0.35);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
     &--hero {
         color: white;
         background-color: variables.$color-secondary;
@@ -29,6 +37,18 @@
         }
     } 
         
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4em 0.5em;
+    margin: 0 0 variables.$mini-spacer 0;
+
+    .badge {
+        margin: 0;
+    }
 }
 
 
