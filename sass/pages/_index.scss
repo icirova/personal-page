@@ -121,6 +121,11 @@
         display: none;
         margin: variables.$double-spacer auto 0;
         border-radius: variables.$half-spacer;
+        width: min(100%, 320px);
+        height: 400px;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        object-position: 72% 35%;
         max-width: 100%;
         border: 1px solid rgba(variables.$color-accent, 0.12);
         box-shadow: 0 12px 28px rgba(variables.$color-accent, 0.18);

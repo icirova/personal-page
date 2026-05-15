@@ -246,6 +246,7 @@ button .circle {
     justify-self: start;
   }
 }
+
 .badges {
   display: flex;
   flex-wrap: wrap;
@@ -348,37 +349,6 @@ button .circle {
   height: 30px;
 }
 
-.project .project-thumb {
-  display: block;
-  width: 100%;
-  margin: 0.5em auto 1em;
-  text-decoration: none;
-  color: inherit;
-}
-
-.project .project-thumb img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 0.5em;
-  border: 1px solid rgba(93, 37, 179, 0.12);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
-}
-
-@media screen and (min-width: 680px) {
-  .project .card--project .card__header {
-    flex: 0 0 25%;
-  }
-  .project .card--project .project-thumb {
-    flex: 0 0 30%;
-    max-width: 30%;
-    margin: 0;
-  }
-  .project .card--project .card-description {
-    flex: 1 1 45%;
-  }
-}
-
 .icon-image:hover,
 .icon-image:focus {
   filter: invert(50%);
@@ -405,8 +375,7 @@ button .circle {
     display: grid;
     grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
     grid-template-rows: auto auto auto auto;
-    -moz-column-gap: 2em;
-         column-gap: 2em;
+    column-gap: 2em;
     align-items: start;
     border-radius: 0;
     padding: 2em;
@@ -461,7 +430,6 @@ button .circle {
   }
 }
 .hero .badge {
-  width: -moz-fit-content;
   width: fit-content;
   padding: 0.25em 0.7em;
   white-space: nowrap;
@@ -507,6 +475,11 @@ button .circle {
   display: none;
   margin: 2em auto 0;
   border-radius: 0.5em;
+  width: min(100%, 320px);
+  height: 400px;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: 72% 35%;
   max-width: 100%;
   border: 1px solid rgba(47, 67, 182, 0.12);
   box-shadow: 0 12px 28px rgba(47, 67, 182, 0.18);
@@ -664,6 +637,34 @@ button .circle {
     padding: 0 2em;
   }
 }
+.project .project-thumb {
+  display: block;
+  width: 100%;
+  margin: 0.5em auto 1em;
+  text-decoration: none;
+  color: inherit;
+}
+.project .project-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5em;
+  border: 1px solid rgba(93, 37, 179, 0.12);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+@media screen and (min-width: 680px) {
+  .project .card--project .card__header {
+    flex: 0 0 25%;
+  }
+  .project .card--project .project-thumb {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin: 0;
+  }
+  .project .card--project .card-description {
+    flex: 1 1 45%;
+  }
+}
 
 html {
   box-sizing: border-box;
@@ -766,4 +767,6 @@ html {
 
 h1 > h6 {
   font-family: "Montserrat", sans-serif;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
