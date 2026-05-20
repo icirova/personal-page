@@ -4,8 +4,9 @@
   "description": "personal page",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve"
+    "clean": "node -e \"require('node:fs').rmSync('_site', { recursive: true, force: true })\"",
+    "build": "npm run clean && npx @11ty/eleventy",
+    "serve": "npm run clean && npx @11ty/eleventy --serve"
   },
   "keywords": [],
   "author": "",
