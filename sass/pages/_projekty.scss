@@ -6,6 +6,41 @@
         padding: 0 variables.$double-spacer;
     }
 
+    .project-filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: variables.$mini-spacer;
+        margin: 0 auto variables.$double-spacer;
+    }
+
+    .project-filter {
+        border: 1px solid rgba(variables.$color-primary, 0.24);
+        border-radius: variables.$half-spacer;
+        padding: 0.55em 0.95em;
+        color: variables.$color-primary;
+        background: white;
+        font: inherit;
+        font-size: 0.9em;
+        font-weight: 700;
+        line-height: 1.2;
+        cursor: pointer;
+        transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+        &:hover,
+        &:focus-visible,
+        &--active {
+            color: white;
+            background-color: variables.$color-accent;
+            border-color: variables.$color-accent;
+        }
+
+        &:focus-visible {
+            outline: 3px solid rgba(variables.$color-accent, 0.28);
+            outline-offset: 2px;
+        }
+    }
+
     .project-thumb {
         display: block;
         width: 100%;
@@ -24,6 +59,10 @@
     }
 
     .card--project {
+        &.card--hidden {
+            display: none;
+        }
+
         @include mixins.display-lg {
             .card__header {
                 flex: 0 0 25%;

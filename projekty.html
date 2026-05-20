@@ -7,7 +7,25 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
 <section class="project">
   <h1 class="title">Projekty</h1>
 
-  <div class="card card--project">
+  <div class="project-filters" aria-label="Filtrování projektů">
+    <button class="project-filter project-filter--active" type="button" data-filter="all" aria-pressed="true">
+      Vše
+    </button>
+    <button class="project-filter" type="button" data-filter="app" aria-pressed="false">
+      Aplikace
+    </button>
+    <button class="project-filter" type="button" data-filter="web" aria-pressed="false">
+      Weby
+    </button>
+    <button class="project-filter" type="button" data-filter="qa" aria-pressed="false">
+      Testování
+    </button>
+    <button class="project-filter" type="button" data-filter="design" aria-pressed="false">
+      UX/UI
+    </button>
+  </div>
+
+  <div class="card card--project" data-categories="web content">
     <div class="card__header">
       <h3 class="subtitle subtitle--projects">
         Tragédium aneb Vesmírná pohroma
@@ -50,7 +68,7 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
     </p>
   </div>
 
-  <div class="card card--project">
+  <div class="card card--project" data-categories="app qa">
     <div class="card__header">
       <h3 class="subtitle subtitle--projects">Christmas Gift Tracker</h3>
       <div class="badges">
@@ -103,7 +121,7 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
     </p>
   </div>
 
-  <div class="card card--project">
+  <div class="card card--project" data-categories="qa">
   <div class="card__header">
     <h3 class="subtitle subtitle--projects">
       Gift Tracker – E2E Test Automation
@@ -136,7 +154,40 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
   </p>
 </div>
 
-  <div class="card card--project">
+  <div class="card card--project" data-categories="app">
+    <div class="card__header">
+      <h3 class="subtitle subtitle--projects">Week Glance Widget</h3>
+
+      <div class="badges">
+        <span class="badge">JavaScript</span>
+        <span class="badge">JSX</span>
+        <span class="badge">Übersicht</span>
+        <span class="badge">iCalendar</span>
+        <span class="badge">macOS widget</span>
+      </div>
+
+      <div class="icons">
+        <a href="https://github.com/icirova/week-glance-widget" class="icon-link">
+          <img
+            src="/icons/github_icon.svg"
+            alt="ikona gitHub"
+            class="icon-image"
+            width="25"
+          />
+        </a>
+      </div>
+    </div>
+
+    <p class="card-description">
+      Minimalistický desktop widget pro macOS, který zobrazuje události z
+      Google Kalendáře na následujících 7 dní. Načítá soukromý iCal feed z
+      lokální konfigurace, zpracovává <code>.ics</code> data a podporuje
+      časované, celodenní i opakované události. Důraz je na jednoduché UI,
+      bezpečné zacházení s citlivým odkazem a praktické každodenní použití.
+    </p>
+  </div>
+
+  <div class="card card--project" data-categories="qa">
     <div class="card__header">
       <h3 class="subtitle subtitle--projects">
         WebdriverIO – Automation Tester (pohovor)
@@ -164,7 +215,7 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
     </p>
   </div>
 
-  <div class="card card--project">
+  <div class="card card--project" data-categories="web">
     <div class="card__header">
       <h3 class="subtitle subtitle--projects">Lovecký zámeček Brendy</h3>
       <div class="badges">
@@ -217,7 +268,7 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
     </p>
   </div>
 
-  <div class="card card--project">
+  <div class="card card--project" data-categories="app">
     <div class="card__header">
       <h3 class="subtitle subtitle--projects">Týden na talíři</h3>
       <div class="badges">
@@ -261,7 +312,7 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
 </p>
   </div>
 
-  <div class="card card--project">
+  <div class="card card--project" data-categories="app">
     <div class="card__header">
       <h3 class="subtitle subtitle--projects">Turistický deník</h3>
       <div class="badges">
@@ -310,7 +361,7 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
     </p>
   </div>
 
-  <div class="card card--project">
+  <div class="card card--project" data-categories="web content">
     <div class="card__header">
       <h3 class="subtitle subtitle--projects">Nejen o akvarelu</h3>
       <div class="badges">
@@ -356,7 +407,7 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
     </p>
   </div>
 
-  <div class="card card--project">
+  <div class="card card--project" data-categories="design">
     <div class="card__header">
       <h3 class="subtitle subtitle--projects">Figma</h3>
       <div class="badges">
@@ -399,7 +450,7 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
     </p>
   </div>
 
-  <div class="card card--project">
+  <div class="card card--project" data-categories="web">
     <div class="card__header">
       <h3 class="subtitle subtitle--projects">USAGI Dojo</h3>
       <div class="badges">
@@ -447,7 +498,7 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
     </p>
   </div>
 
-  <div class="card card--project">
+  <div class="card card--project" data-categories="qa">
     <div class="card__header">
       <h3 class="subtitle subtitle--projects">
         WebdriverIO – Czechitas (závěrečný projekt)

@@ -56,3 +56,28 @@ if (emailElements.length) {
         }
     });
 }
+
+const projectFilters = document.querySelectorAll('.project-filter');
+const projectCards = document.querySelectorAll('.card--project[data-categories]');
+
+if (projectFilters.length && projectCards.length) {
+    projectFilters.forEach((filterButton) => {
+        filterButton.addEventListener('click', () => {
+            const selectedFilter = filterButton.getAttribute('data-filter');
+
+            projectFilters.forEach((button) => {
+                const isActive = button === filterButton;
+                button.classList.toggle('project-filter--active', isActive);
+                button.setAttribute('aria-pressed', String(isActive));
+            });
+
+            projectCards.forEach((card) => {
+                const categories = card.getAttribute('data-categories').split(' ');
+                const isVisible = selectedFilter === 'all' || categories.includes(selectedFilter);
+
+                card.classList.toggle('card--hidden', !isVisible);
+                card.style.display = isVisible ? '' : 'none';
+            });
+        });
+    });
+}

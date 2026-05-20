@@ -637,6 +637,35 @@ button .circle {
     padding: 0 2em;
   }
 }
+.project .project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25em;
+  margin: 0 auto 2em;
+}
+.project .project-filter {
+  border: 1px solid rgba(93, 37, 179, 0.24);
+  border-radius: 0.5em;
+  padding: 0.55em 0.95em;
+  color: #5d25b3;
+  background: white;
+  font: inherit;
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.project .project-filter:hover, .project .project-filter:focus-visible, .project .project-filter--active {
+  color: white;
+  background-color: #2f43b6;
+  border-color: #2f43b6;
+}
+.project .project-filter:focus-visible {
+  outline: 3px solid rgba(47, 67, 182, 0.28);
+  outline-offset: 2px;
+}
 .project .project-thumb {
   display: block;
   width: 100%;
@@ -651,6 +680,9 @@ button .circle {
   border-radius: 0.5em;
   border: 1px solid rgba(93, 37, 179, 0.12);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+.project .card--project.card--hidden {
+  display: none;
 }
 @media screen and (min-width: 680px) {
   .project .card--project .card__header {
