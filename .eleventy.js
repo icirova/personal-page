@@ -9,6 +9,7 @@ module.exports=function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("files");
     eleventyConfig.addPassthroughCopy("robots.txt");
     eleventyConfig.addPassthroughCopy("sitemap.xml");
+    eleventyConfig.addPassthroughCopy("google1a0b40971cfe1f5a.html");
 
     // eleventyConfig.addPassthroughCopy("**/*.js");
 
