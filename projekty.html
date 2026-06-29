@@ -25,46 +25,52 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
     </button>
   </div>
 
-  <div class="card card--project" data-categories="web content">
+  <div class="card card--project" data-categories="app">
     <div class="card__header">
-      <h3 class="subtitle subtitle--projects">
-        Tragédium aneb Vesmírná pohroma
-      </h3>
+      <h3 class="subtitle subtitle--projects">Turistický deník</h3>
       <div class="badges">
-        <span class="badge">Web</span>
-        <span class="badge">HTML</span>
-        <span class="badge">CSS</span>
+        <span class="badge">React</span>
         <span class="badge">JavaScript</span>
-        <span class="badge">Obsahový projekt</span>
+        <span class="badge">Vite</span>
+        <span class="badge">SASS</span>
+        <span class="badge">ESLint</span>
+        <span class="badge">Keycloak</span>
+        <span class="badge badge--progress">IN PROGRESS</span>
       </div>
       <div class="icons">
-        <a href="https://tragedium.cz/" class="icon-link"
+        <a href="https://tourist-diary.netlify.app/" class="icon-link"
           ><img
             src="/icons/link-icon.svg"
             alt="ikona odkazu"
             class="icon-image"
             width="25"
         /></a>
+        <a href="https://github.com/icirova/tourist-diary-v2" class="icon-link"
+          ><img
+            src="/icons/github_icon.svg"
+            alt="ikona gitHub"
+            class="icon-image"
+            width="25"
+        /></a>
       </div>
     </div>
 
-    <a class="project-thumb" href="https://tragedium.cz/">
+    <a class="project-thumb" href="https://tourist-diary.netlify.app/">
       <img
-        src="/images/tragedium.webp"
-        alt="Náhled projektu Tragédium aneb Vesmírná pohroma"
+        src="/images/denik.webp"
+        alt="Náhled projektu Turistický deník"
         loading="lazy"
-        width="1536"
-        height="1024"
+        width="1280"
+        height="720"
       />
     </a>
 
     <p class="card-description">
-      Autorský web pro sbírku sci-fi povídek s absurdním humorem. Projekt
-      stylizuje obsah jako palubní archiv incidentů, selhání a provozních
-      nedorozumění, včetně veřejné části s archivem záznamů, technickou
-      dokumentací, profily posádky a obrazovým archivem. Důraz je na výraznou
-      atmosféru lodního terminálu, čitelnou navigaci a konzistentní prezentaci
-      literárního světa.
+      Webová aplikace pro evidenci výletů s mapou (Leaflet), tagy, detailní
+      stránkou a editací záznamů. Uživatel může přidávat vlastní místa včetně
+      fotek a souřadnic, přičemž je k dispozici demo přihlášení nebo integrace s
+      Keycloak. Součástí je i odlehčený „AI průvodce“ pro doporučení výletů
+      podle klíčových slov.
     </p>
   </div>
 
@@ -121,38 +127,49 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
     </p>
   </div>
 
-  <div class="card card--project" data-categories="qa">
-  <div class="card__header">
-    <h3 class="subtitle subtitle--projects">
-      Gift Tracker – E2E Test Automation
-    </h3>
-
-    <div class="badges">
-      <span class="badge">Playwright</span>
-      <span class="badge">JavaScript</span>
-      <span class="badge">Page Object Pattern</span>
-      <span class="badge">E2E Testing</span>
-    
+  <div class="card card--project" data-categories="app">
+    <div class="card__header">
+      <h3 class="subtitle subtitle--projects">Týden na talíři</h3>
+      <div class="badges">
+        <span class="badge">React</span>
+        <span class="badge">Vite</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">React Router</span>
+      </div>
+      <div class="icons">
+        <a href="https://menu-planner.netlify.app/" class="icon-link"
+          ><img
+            src="/icons/link-icon.svg"
+            alt="ikona odkazu"
+            class="icon-image"
+            width="25"
+        /></a>
+        <a href="https://github.com/icirova/menu-planner" class="icon-link"
+          ><img
+            src="/icons/github_icon.svg"
+            alt="ikona gitHub"
+            class="icon-image"
+            width="25"
+        /></a>
+      </div>
     </div>
 
-    <div class="icons">
-      <a href="https://github.com/icirova/gift-tracker/tree/main/tests" class="icon-link">
-        <img
-          src="/icons/github_icon.svg"
-          alt="GitHub repozitář"
-          class="icon-image"
-          width="25"
-        />
-      </a>
-    </div>
+    <a class="project-thumb" href="https://menu-planner.netlify.app/">
+      <img
+        src="/images/menu.webp"
+        alt="Náhled projektu Dnešní menu"
+        loading="lazy"
+        width="1280"
+        height="720"
+      />
+    </a>
+
+    <p class="card-description">
+  Týdenní plánovač jídel v Reactu s katalogem receptů, filtrováním,
+  vlastním přidáváním receptů, přehledným drag‑and‑drop rozvrhem a automaticky
+  generovaným nákupním seznamem.
+</p>
   </div>
-
-  <p class="card-description">
-    Samostatný testovací projekt k aplikaci Gift Tracker zaměřený na automatizované testování.
-    Testy pokrývají klíčové uživatelské toky (roky, rozpočet, osoby, dárky, Undo, perzistence dat)
-    a využívají Page Object Pattern a stabilní selektory <code>data-testid</code>.
-  </p>
-</div>
 
   <div class="card card--project" data-categories="app">
     <div class="card__header">
@@ -186,6 +203,82 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
       bezpečné zacházení s citlivým odkazem a praktické každodenní použití.
     </p>
   </div>
+
+  <div class="card card--project" data-categories="web content">
+    <div class="card__header">
+      <h3 class="subtitle subtitle--projects">
+        Tragédium aneb Vesmírná pohroma
+      </h3>
+      <div class="badges">
+        <span class="badge">Web</span>
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">Obsahový projekt</span>
+      </div>
+      <div class="icons">
+        <a href="https://tragedium.cz/" class="icon-link"
+          ><img
+            src="/icons/link-icon.svg"
+            alt="ikona odkazu"
+            class="icon-image"
+            width="25"
+        /></a>
+      </div>
+    </div>
+
+    <a class="project-thumb" href="https://tragedium.cz/">
+      <img
+        src="/images/tragedium.webp"
+        alt="Náhled projektu Tragédium aneb Vesmírná pohroma"
+        loading="lazy"
+        width="1536"
+        height="1024"
+      />
+    </a>
+
+    <p class="card-description">
+      Autorský web pro sbírku sci-fi povídek s absurdním humorem. Projekt
+      stylizuje obsah jako palubní archiv incidentů, selhání a provozních
+      nedorozumění, včetně veřejné části s archivem záznamů, technickou
+      dokumentací, profily posádky a obrazovým archivem. Důraz je na výraznou
+      atmosféru lodního terminálu, čitelnou navigaci a konzistentní prezentaci
+      literárního světa.
+    </p>
+  </div>
+
+  <div class="card card--project" data-categories="qa">
+  <div class="card__header">
+    <h3 class="subtitle subtitle--projects">
+      Gift Tracker – E2E Test Automation
+    </h3>
+
+    <div class="badges">
+      <span class="badge">Playwright</span>
+      <span class="badge">JavaScript</span>
+      <span class="badge">Page Object Pattern</span>
+      <span class="badge">E2E Testing</span>
+
+    </div>
+
+    <div class="icons">
+      <a href="https://github.com/icirova/gift-tracker/tree/main/tests" class="icon-link">
+        <img
+          src="/icons/github_icon.svg"
+          alt="GitHub repozitář"
+          class="icon-image"
+          width="25"
+        />
+      </a>
+    </div>
+  </div>
+
+  <p class="card-description">
+    Samostatný testovací projekt k aplikaci Gift Tracker zaměřený na automatizované testování.
+    Testy pokrývají klíčové uživatelské toky (roky, rozpočet, osoby, dárky, Undo, perzistence dat)
+    a využívají Page Object Pattern a stabilní selektory <code>data-testid</code>.
+  </p>
+</div>
 
   <div class="card card--project" data-categories="qa">
     <div class="card__header">
@@ -265,99 +358,6 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
       <a href="https://github.com/icirova/hotel-lovecky-zamecek-BE" class="link"
         >zde.</a
       >
-    </p>
-  </div>
-
-  <div class="card card--project" data-categories="app">
-    <div class="card__header">
-      <h3 class="subtitle subtitle--projects">Týden na talíři</h3>
-      <div class="badges">
-        <span class="badge">React</span>
-        <span class="badge">Vite</span>
-        <span class="badge">JavaScript</span>
-        <span class="badge">React Router</span>
-      </div>
-      <div class="icons">
-        <a href="https://menu-planner.netlify.app/" class="icon-link"
-          ><img
-            src="/icons/link-icon.svg"
-            alt="ikona odkazu"
-            class="icon-image"
-            width="25"
-        /></a>
-        <a href="https://github.com/icirova/menu-planner" class="icon-link"
-          ><img
-            src="/icons/github_icon.svg"
-            alt="ikona gitHub"
-            class="icon-image"
-            width="25"
-        /></a>
-      </div>
-    </div>
-
-    <a class="project-thumb" href="https://menu-planner.netlify.app/">
-      <img
-        src="/images/menu.webp"
-        alt="Náhled projektu Dnešní menu"
-        loading="lazy"
-        width="1280"
-        height="720"
-      />
-    </a>
-
-    <p class="card-description">
-  Týdenní plánovač jídel v Reactu s katalogem receptů, filtrováním,
-  vlastním přidáváním receptů, přehledným drag‑and‑drop rozvrhem a automaticky
-  generovaným nákupním seznamem.
-</p>
-  </div>
-
-  <div class="card card--project" data-categories="app">
-    <div class="card__header">
-      <h3 class="subtitle subtitle--projects">Turistický deník</h3>
-      <div class="badges">
-        <span class="badge">React</span>
-        <span class="badge">JavaScript</span>
-        <span class="badge">Vite</span>
-        <span class="badge">SASS</span>
-        <span class="badge">ESLint</span>
-        <span class="badge">Keycloak</span>
-        <span class="badge badge--progress">IN PROGRESS</span>
-      </div>
-      <div class="icons">
-        <a href="https://tourist-diary.netlify.app/" class="icon-link"
-          ><img
-            src="/icons/link-icon.svg"
-            alt="ikona odkazu"
-            class="icon-image"
-            width="25"
-        /></a>
-        <a href="https://github.com/icirova/tourist-diary-v2" class="icon-link"
-          ><img
-            src="/icons/github_icon.svg"
-            alt="ikona gitHub"
-            class="icon-image"
-            width="25"
-        /></a>
-      </div>
-    </div>
-
-    <a class="project-thumb" href="https://tourist-diary.netlify.app/">
-      <img
-        src="/images/denik.webp"
-        alt="Náhled projektu Turistický deník"
-        loading="lazy"
-        width="1280"
-        height="720"
-      />
-    </a>
-
-    <p class="card-description">
-      Webová aplikace pro evidenci výletů s mapou (Leaflet), tagy, detailní
-      stránkou a editací záznamů. Uživatel může přidávat vlastní místa včetně
-      fotek a souřadnic, přičemž je k dispozici demo přihlášení nebo integrace s
-      Keycloak. Součástí je i odlehčený „AI průvodce“ pro doporučení výletů
-      podle klíčových slov.
     </p>
   </div>
 
@@ -528,4 +528,5 @@ description: Portfolio projektů Ivety Círové z oblasti QA, frontendového vý
       obsahuje bloky beforeEach.
     </p>
   </div>
+
 </section>
