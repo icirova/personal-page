@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://personal-page.cirova.cz/sitemap.xml
+Sitemap: https://iveta.cirova.cz/sitemap.xml
